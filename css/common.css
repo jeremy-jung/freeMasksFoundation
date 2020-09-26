@@ -1,0 +1,27 @@
+.logo {
+    height: 40px;
+    width: 40px;
+}
+
+.brand {
+    font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    font-size: 20px;
+}
+
+header {
+    background-color: beige;
+}
+
+.footer {
+    bottom: 0;
+    position: absolute;
+    background-color: beige;
+    height:50px;
+    text-align: center;
+}
+
+#pageContainer {
+    min-height: 100%;
+    width: 100%;
+    position: relative;
+}

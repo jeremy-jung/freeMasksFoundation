@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <meta charset='utf-8' />
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="./includes/bootstrap4.5.2/css/bootstrap.css">
+        <!-- common webpage css-->
+        <link rel="stylesheet" href="./css/common.css">
+        <link href='https://fonts.googleapis.com/css?family=Baloo Bhaina 2' rel='stylesheet'>
+        <title>
+            Free Masks Foundation
+        </title>
+        <style>
+            .text {
+                font-size: 50px;
+                color: azure;
+            }
+
+            #main {
+                height: 400px;
+                background-color: beige;
+            }
+
+            .maskChoice {
+                height: 300px;
+                width: 60px;
+                background-color: white;
+                margin: 20px;
+                text-align: center;
+            }
+
+            #n95 {
+                background-image: url("./views/n95.jpg");
+                background-repeat: no-repeat;
+                height:85%;
+            }
+
+            #n953m {
+                background-image: url("./views/n953m.jpg");
+                background-repeat: no-repeat;
+                background-size: 100px 50px;
+            }
+
+            body {
+                background-color: rgb(255, 166, 65);
+                background-size: cover;
+                height: 1000px;
+            }
+        </style>
+    </head>
+
+    <body>
+        <div id="pageContainer">
+            <header class="container-fluid">
+                <br />
+                <div class="row">
+                    <div class="col-sm-4">
+                        <img class="logo img-fluid" src="./views/freepikMask.png">
+                    </div>
+                </div>
+                <div class="row">
+                    <div class="col-8">
+                        <h3 class="brand">Free Masks Foundation</h3>
+                    </div>
+                    <div class="col">
+                        <nav class="row nav-tabs">
+                            <a href="index.html" class="navbar nav-link">Home</a>
+                            <a href="aboutus.html" class="navbar nav-link">About Us</a>
+                            <a href="services.html" class="navbar nav-link active">Our Services</a>
+                            <a href="#" class="navbar nav-link">Contact</a>
+                        </nav>
+                    </div>
+                </div>
+            </header>
+            <br /><br /><br /><br />
+            <div id="body" class="container">
+                <div class = "row justify-content-center">
+                    <h1 class="text">Choose your mask</h1>
+                </div>
+                <div class="row">
+                    <div class = "col" style = "height: 600px;">
+                        <div class="row justify-content-start">
+                            <div class="col maskChoice">
+                                <div class = "row justify-content-center" style = "background-color: #2a9d8f">
+                                    <h2>N95</h2>
+                                </div>
+                                <div id = "n95" class = "row">
+                                </div>
+                            </div>
+                            <div id="n953m" class="col maskChoice">
+                        
+                            </div>
+                        </div>
+                        <div class="row justify-content-start">
+                            <div id="dental" class="col maskChoice">
+                        
+                            </div>
+                            <div id="cloth" class="col maskChoice">
+                        
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col">
+                        <div id="main">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <footer class="footer container-fluid">
+                <div class="row">
+                    <div class="col-3">
+                        Follow us on instagram
+                    </div>
+                    <div class="col-3">
+                        Donate!
+                    </div>
+                </div>
+            </footer>
+        </div>
+
+        <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+        <script src="./includes/jquery/jquery3.5.1.js"></script>
+        <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"
+            integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN"
+            crossorigin="anonymous"></script>
+        <script src="./includes/bootstrap4.5.2/js/bootstrap.js"></script>
+    </body>
+
+</html>
