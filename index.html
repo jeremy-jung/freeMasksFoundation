@@ -34,11 +34,14 @@
                 height: 400px;
             }
 
-            #middle {
-                background-image: url("./views/maskpeople.jpg");
+            .parallax {
                 background-attachment: fixed;
                 background-repeat: no-repeat;
                 background-size:cover;
+            }
+
+            #middle {
+                background-image: url("./views/maskpeople.jpg");
                 height: 500px;
             }
 
@@ -49,15 +52,18 @@
 
             #bottom {
                 background-image: url("./views/delivery.jpg");
-                background-attachment: fixed;
-                background-repeat: no-repeat;
-                background-size:cover;
                 height: 600px;
             }
 
             #aboutusContent {
                 height: 40%;
                 background-color: #f5f5dc;
+            }
+
+            @media only screen and (max-device-width: 767px) {
+                .parallax {
+                    background-attachment: scroll;
+                }
             }
         </style>
     </head>
@@ -86,7 +92,7 @@
             <div class="container-fluid" id = "top">
                 <div class="row justify-content-center">
                     <div class = "col" style = "text-align: center;">
-                        <h4 style = "margin: 10%;">
+                        <h4 style = "margin: 10%; font-size: 100%;">
                             “We are not defenseless against COVID-19,” said CDC Director Dr. Robert R. Redfield. “Cloth face coverings are one
                             of
                             the most powerful weapons we have to slow and stop the spread of the virus – particularly when used universally
