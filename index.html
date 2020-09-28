@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <!--
     https://matthewjamestaylor.com/bottom-footer
+    https://www.w3schools.com/howto/howto_css_parallax.asp
 
 -->
 <html>
@@ -18,23 +19,45 @@
         </title>
         <style>
             .text {
-                font-size: 50px;
-                color: azure;
-            }
-
-            #main {
-                height: 400px;
-                background-color: beige;
+                font-size: 60px;
+                color: #f0ffff;
             }
 
             body {
-                background-image: url("./views/maskpeople.jpg");
-                background-repeat: no-repeat;
-                background-size:cover;
-                height: 1000px;
+                height: 1500px;
                 padding-bottom: 50px;
                 margin: 0;
                 padding: 0;
+            }
+            #top {
+                background-color: #f07167;
+                height: 400px;
+            }
+
+            #middle {
+                background-image: url("./views/maskpeople.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 500px;
+            }
+
+            #basicInfo {
+                height: 40%;
+                background-color: #f5f5dc;
+            }
+
+            #bottom {
+                background-image: url("./views/delivery.jpg");
+                background-attachment: fixed;
+                background-repeat: no-repeat;
+                background-size:cover;
+                height: 600px;
+            }
+
+            #aboutusContent {
+                height: 40%;
+                background-color: #f5f5dc;
             }
         </style>
     </head>
@@ -54,75 +77,72 @@
                     <div class="col">
                         <nav class="row nav-tabs">
                             <a href="index.html" class="navbar nav-link active">Home</a>
-                            <a href="aboutus.html" class="navbar nav-link">About Us</a>
                             <a href="services.html" class="navbar nav-link">Our Services</a>
                             <a href="#" class="navbar nav-link">Contact</a>
                         </nav>
                     </div>
                 </div>
             </header>
-            <div class="container">
-                <h1 class="text">We deliver masks to your door step</h1>
+            <div class="container-fluid" id = "top">
+                <div class="row justify-content-center">
+                    <div class = "col" style = "text-align: center;">
+                        <h4 style = "margin: 10%;">
+                            “We are not defenseless against COVID-19,” said CDC Director Dr. Robert R. Redfield. “Cloth face coverings are one
+                            of
+                            the most powerful weapons we have to slow and stop the spread of the virus – particularly when used universally
+                            within a
+                            community setting. All Americans have a responsibility to protect themselves, their families, and their
+                            communities.” (CDC.gov)
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div class="container-fluid" id = "middle">
+                <h1 class="text">Get masks delivered to your doorstep</h1>
                 <div class="row justify-content-end">
                     <div id="main" class="col-sm-4">
-                        <div class="row">
-                            <div class="col">
-                                <h1>Sign up now!</h1>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col">
-                                <form action="submitForm()">
-                                    <div class="row">
-                                        <div class="col">
-                                            <h3>Full name:</h3>
-                                        </div>
-                                        <div class="col">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <h3>Address:</h3>
-                                        </div>
-                                        <div class="col">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <h3>Zipcode:</h3>
-                                        </div>
-                                        <div class="col">
-                                            <input type="text">
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <h3>Mask type:</h3>
-                                        </div>
-                                    </div>
-                                    <div class="row">
-                                        <div class="col">
-                                            <input type="radio" id="surgical" name="maskTypes" value="surgical">
-                                            <label for="surgical">Surgical</label>
-                                            <input type="radio" id="cloth" name="maskTypes" value="cloth">
-                                            <label for="cloth">Cloth</label>
-                                            <input type="radio" id="respirator" name="maskTypes" value="respirator">
-                                            <label for="respirator">N95</label>
-                                        </div>
-                                    </div>
-                                    <input type="submit">
-                                </form>
-                            </div>
-                        </div>
-                        <br />
-                        <div class="row">
-                            <div class="col">
-                                <h5>We will deliver a batch of masks to you every week for FREE</h5>
-                            </div>
-                        </div>
                     </div>
+                </div>
+            </div>
+            <div class = "container-fluid" id = "basicInfo">
+                <div class = "row justify-content-center">
+                    <div class = "col-sm-6">
+                        <img src = "./views/icons8Home.png" style = "position: relative; left: 60%;" height = "150px">
+                    </div>
+                    <div class = "col-sm">
+                        <h4 style = "position: relative; text-align: center; top: 50%; width: 50%;">
+                            Reduce your exposure to the outside world and keep your family safe 
+                        </h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-5">
+                        <img src="./views/icons8Community.png" style="position: relative; left: 60%;" height="150px">
+                    </div>
+                    <div class="col-sm">
+                        <h4 style="position: relative; text-align: center; top: 50%; width: 50%;">
+                            Ease access to vital resources and empower your community
+                        </h4>
+                    </div>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-sm-4">
+                        <img src="./views/icon8Donate.png" style="position: relative; left: 60%;" height="150px">
+                    </div>
+                    <div class="col-sm">
+                        <h4 style="position: relative; text-align: center; top: 50%; width: 50%;">
+                            Help us on Patreon or donate masks to help more people
+                        </h4>
+                    </div>
+                </div>
+            </div>
+            <div clsas="container" id="bottom">
+                <br/>
+                <br />
+                <br />
+                <br />
+                <div class="row">
+                    <div class="col" id="aboutusContent">
                 </div>
             </div>
             <footer class="footer container-fluid">
